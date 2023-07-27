@@ -106,6 +106,12 @@
     }
   }
   
+  @media (max-width: 1400px) {
+    .header__contact .tel {
+      font-size: 18px;
+  }
+  
+  }
   @media (max-width: 1200px) {
     .header__contact {
       display: none;
@@ -117,6 +123,7 @@
     .header__contacts {
       flex: 1;
     }
+  
   }
   
   @media (max-width: 576px) {
