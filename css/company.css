@@ -1,0 +1,48 @@
+.company,
+.dl-form {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+.advantages {
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.advantages .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 175px;
+}
+.number {
+  font-size: 45px;
+  font-weight: 500;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(35deg, #b5e210, #69a019);
+}
+.figcaption__company {
+  bottom: 60px;
+  right: 50px;
+}
+@media (max-width: 576px) {
+  .company,
+  .dl-form {
+    padding: 70px 0;
+  }
+  .advantages {
+    gap: 10px;
+  }
+  .advantages p {
+    font-size: 15px;
+    line-height: 140%;
+  }
+  .advantages .number {
+    font-size: 40px;
+  }
+  .figcaption__company {
+    bottom: 16px;
+    right: 16px;
+    max-width: 80px;
+  }
+}

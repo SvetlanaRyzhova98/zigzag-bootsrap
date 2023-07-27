@@ -1,0 +1,20 @@
+.container__category {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .category__item {
+  }
+  .category__item .figcaption {
+    top: 50px;
+    left: 40px;
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 90px);
+  }
+  .figcaption img {
+    max-width: 60px;
+  }
