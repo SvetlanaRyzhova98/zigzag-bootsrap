@@ -1,5 +1,5 @@
 section.hiro {
-  background: url(../img/hiro.png) no-repeat;
+  background: url(../img/hiro.webp) no-repeat;
   background-size: cover;
   height: calc(100vh - 101px);
   width: 100%;
