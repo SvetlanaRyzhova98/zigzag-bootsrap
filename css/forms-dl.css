@@ -1,7 +1,9 @@
 .dealers {
   background: url(../img/bg-dl.png) no-repeat;
   background-size: cover;
-  padding:  100px 0;
+  padding-top: 70px;
+    padding-bottom: 70px;
+
 }
 .dl-container {
   display: flex;

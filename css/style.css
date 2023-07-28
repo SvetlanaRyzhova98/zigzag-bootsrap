@@ -8,7 +8,11 @@
 @import url("../css/social.css");
 @import url("../css/footer.css");
 
-
+.general-container{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
 body {
   font-family: "Cera Pro", sans-serif;
   letter-spacing: 0.03em;
@@ -18,10 +22,7 @@ a {
   color: black;
 }
 
-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
+ 
 img {
   width: 100%;
 }
@@ -161,7 +162,11 @@ figcaption {
 } 
 }
 @media (max-width: 576px) {
-  
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
 h2 {
   font-size: 30px;
   letter-spacing: 0.02em;
@@ -170,8 +175,5 @@ h2 {
 h3{
   font-size: 24px;
 }
-section {
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
+ 
 }
