@@ -7,8 +7,11 @@
 @import url("../css/forms-dl.css");
 @import url("../css/social.css");
 @import url("../css/footer.css");
+/* ------------------- */
+@import url("../css/catalog.css");
 
-.general-container{
+
+.general-container {
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -21,8 +24,12 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover,
+a:focus,
+a:active {
+  color: rgb(99, 98, 98);
+}
 
- 
 img {
   width: 100%;
 }
@@ -32,16 +39,21 @@ h2 {
   max-width: 550px;
 }
 h4 {
-    color: #ccf60e;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
+  color: #ccf60e;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 .h4--black {
-    color: black;
-    margin: 0;
-  }
+  color: black;
+  margin: 0;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 0;
+}
 .grad-green {
   color: transparent;
   -webkit-background-clip: text;
@@ -104,7 +116,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 40px ;
+  padding-bottom: 40px;
 }
 .sect__top__btm {
   display: flex;
@@ -146,12 +158,12 @@ figcaption {
   letter-spacing: normal;
 }
 
-.select-country{
+.select-country {
   line-height: 0;
 }
 
 @media (max-width: 992px) {
-  .sect__top__btm{
+  .sect__top__btm {
     flex-wrap: wrap;
     gap: 24px;
   }
@@ -159,21 +171,19 @@ figcaption {
     text-align: start;
     line-height: 140%;
     max-width: 100%;
-} 
+  }
 }
 @media (max-width: 576px) {
-.container{
-  padding-left: 16px;
-  padding-right: 16px;
-
-}
-h2 {
-  font-size: 30px;
-  letter-spacing: 0.02em;
-  line-height: 120%;
-}
-h3{
-  font-size: 24px;
-}
- 
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  h2 {
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }

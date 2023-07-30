@@ -6,6 +6,7 @@
 }
 footer {
   min-height: 330px;
+  margin-top: 70px;
 }
 .footer__left {
   display: flex;
@@ -38,8 +39,9 @@ footer {
   display: flex;
   gap: 150px;
 }
-.btn--foot {
+.butn.butn--foot {
   min-width: 257px;
+  padding: 17px 51px;
 }
 .address--foot p {
   color: #aaaaaa;
@@ -59,7 +61,6 @@ footer {
 }
 @media (max-width: 992px) {
   .footer__top {
-   
     flex-direction: column;
     justify-content: space-between;
   }
@@ -86,6 +87,5 @@ footer {
   }
   .footer__center {
     gap: 100px;
-}
- 
+  }
 }

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entryx</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./img/Union.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav-wrap">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О компании</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Дилерам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Точки продаж</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="d-flex header__contacts">
+                <div class="header__contact">
+                  <a class="tel" href="tel:+77767771111">+7 (776) 777-11-11</a>
+                  <a class="email" href="mailto:entryx.ast@gmail.com"
+                    >entryx.ast@gmail.com</a
+                  >
+                </div>
+                <div class="icon icon-mobile">
+                  <a href="#!" class="icon-item">
+                    <img src="./img/you.svg" alt="youtube" />
+                  </a>
+                  <a href="#!" class="icon-item">
+                    <img src="./img/telegr.svg" alt="telegram" />
+                  </a>
+                  <a href="#!" class="icon-item">
+                    <img src="./img/inst.svg" alt="instagram" />
+                  </a>
+                </div>
+                <button class="butn butn-login">Стать дилером</button>
+                <button class="butn">Вход для дилеров</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="general-container">
+      <section class="container">
+        <div class="sect__top sect__top--catalog">
+          <div class="breadcrmb d-flex align-items-center">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Назад</a></li>
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Каталог товаров
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="sect__top__btm sect__top__btm--end">
+            <h2>Каталог</h2>
+            <div class="method">
+              <select name="sort" id="sort">
+                <option>Цена: по возрастанию</option>
+                <option>Цена: по убыванию</option>
+                <option selected="selected">Порядок: по умолчанию</option>
+                <option>Порядок: сперва новые</option>
+                <option>Порядок: сперва старые</option>
+              </select>
+              <div class="catalog__search">
+                <input
+                  type="search"
+                  name="range-catalog"
+                  placeholder="Найти товар"
+                />
+                <button><img src="./img/search.svg" alt="" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__sect">
+          <div class="filters">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Бренд
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="megidoors"
+                      />
+                      <label class="form-check-label" for="megidoors">
+                        MEGI DOORS
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="retvizan"
+                        checked
+                      />
+                      <label class="form-check-label" for="retvizan">
+                        Ретвизан
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="srt"
+                      />
+                      <label class="form-check-label" for="srt"> STR </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Цена
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      <input
+                        type="text"
+                        id="amount"
+                        readonly
+                        style="border: 0; color: #f6931f; font-weight: bold"
+                      />
+                    </p>
+
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Размер
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="sizeOne"
+                      />
+                      <label class="form-check-label" for="sizeOne">
+                        860х2050; 960х2050
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="sizeTwo"
+                      />
+                      <label class="form-check-label" for="sizeTwo">
+                        870х2050; 970х2050
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="sizeTree"
+                      />
+                      <label class="form-check-label" for="sizeTree">
+                        1200х2050
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingContour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseContour"
+                    aria-expanded="false"
+                    aria-controls="collapseContour"
+                  >
+                    Количество контуров уплотнения
+                  </button>
+                </h2>
+                <div
+                  id="collapseContour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingContour"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="contourOne"
+                      />
+                      <label class="form-check-label" for="contourOne">
+                        1 контур
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="contourTwo"
+                      />
+                      <label class="form-check-label" for="contourTwo">
+                        2 контура
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="contourTree"
+                      />
+                      <label class="form-check-label" for="contourTree">
+                        3 контура
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFour"
+                  >
+                    Наполнитель
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFour"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="mineralPlate"
+                      />
+                      <label class="form-check-label" for="mineralPlate">
+                        Минеральная плита
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="basaltPlate"
+                      />
+                      <label class="form-check-label" for="basaltPlate">
+                        Базальтовая плита
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="styrofoam"
+                      />
+                      <label class="form-check-label" for="styrofoam">
+                        Пенополистерол
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFive"
+                  >
+                    Основной замок
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFive"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="guardian3211"
+                      />
+                      <label class="form-check-label" for="guardian3211">
+                        Гардиан 3211
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="kale252"
+                      />
+                      <label class="form-check-label" for="kale252">
+                        Кале 252
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="guardian2514"
+                      />
+                      <label class="form-check-label" for="guardian2514">
+                        Гардиан 2514
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="galleon811"
+                      />
+                      <label class="form-check-label" for="galleon811">
+                        Галеон 811
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="guardian32-15"
+                      />
+                      <label class="form-check-label" for="guardian32-15">
+                        Гардиан 32.15
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="border3b-k5"
+                      />
+                      <label class="form-check-label" for="border3b-k5">
+                        Border 3b-8-6/K5
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="galleon816"
+                      />
+                      <label class="form-check-label" for="galleon816">
+                        Галеон 816
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="guardian30-11"
+                      />
+                      <label class="form-check-label" for="guardian30-11">
+                        Гардиан 30.11
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="kale"
+                      />
+                      <label class="form-check-label" for="kale"> KALE </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="guardian30-15"
+                      />
+                      <label class="form-check-label" for="guardian30-15">
+                        Гардиан 30.15
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="border3b-13"
+                      />
+                      <label class="form-check-label" for="border3b-13">
+                        Border 3B 8-8X/13
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="suvaldny"
+                      />
+                      <label class="form-check-label" for="suvaldny">
+                        Сувальдный ПРОсам
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseSix"
+                  >
+                    Дополнительный замок
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingSix"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="guardian3001"
+                      />
+                      <label class="form-check-label" for="guardian3001">
+                        Гардиан 3001
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="kale257"
+                      />
+                      <label class="form-check-label" for="kale257">
+                        Кале 257
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="kale-d"
+                      />
+                      <label class="form-check-label" for="kale-d">
+                        KALE
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="border-3b8-6k5"
+                      />
+                      <label class="form-check-label" for="border-3b8-6k5">
+                        Border 3b8-6k5
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="galleon812"
+                      />
+                      <label class="form-check-label" for="galleon812">
+                        Галеон 812
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="border3b4-3"
+                      />
+                      <label class="form-check-label" for="border3b4-3">
+                        Border 3b4-3/85Г
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="galleon817"
+                      />
+                      <label class="form-check-label" for="galleon817">
+                        Галеон 817
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSeven"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseSeven"
+                  >
+                    Толщина полотна
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingSeven"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick50"
+                      />
+                      <label class="form-check-label" for="thick50">
+                        50 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick60"
+                      />
+                      <label class="form-check-label" for="thick60">
+                        60 мм
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick70"
+                      />
+                      <label class="form-check-label" for="thick70">
+                        70 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick80"
+                      />
+                      <label class="form-check-label" for="thick80">
+                        80 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick90"
+                      />
+                      <label class="form-check-label" for="thick90">
+                        90 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick95"
+                      />
+                      <label class="form-check-label" for="thick95">
+                        95 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick100"
+                      />
+                      <label class="form-check-label" for="thick100">
+                        100 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick105"
+                      />
+                      <label class="form-check-label" for="thick105">
+                        105 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick115"
+                      />
+                      <label class="form-check-label" for="thick115">
+                        115 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick120"
+                      />
+                      <label class="form-check-label" for="thick120">
+                        120 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick125 "
+                      />
+                      <label class="form-check-label" for="thick125 ">
+                        125 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="thick131 "
+                      />
+                      <label class="form-check-label" for="thick131 ">
+                        131 мм
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingdeepBox">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseDeepBox"
+                    aria-expanded="true"
+                    aria-controls="panels-collapseDeepBox"
+                  >
+                    Глубина короба
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseDeepBox"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingdeepBox"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth120"
+                      />
+                      <label class="form-check-label" for="depth120">
+                        120 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth135"
+                      />
+                      <label class="form-check-label" for="depth135">
+                        135 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth140"
+                      />
+                      <label class="form-check-label" for="depth140">
+                        140 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth145"
+                      />
+                      <label class="form-check-label" for="depth145">
+                        145 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth150"
+                      />
+                      <label class="form-check-label" for="depth150">
+                        150 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth160"
+                      />
+                      <label class="form-check-label" for="depth160">
+                        160 мм
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="depth165"
+                      />
+                      <label class="form-check-label" for="depth165">
+                        165 мм
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseEight"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseEight"
+                  >
+                    Цвет полимерного покрытия
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingEight"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="plasterGraphite"
+                      />
+                      <label class="form-check-label" for="plasterGraphite">
+                        Штукатурка графит
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="sofAnthracite"
+                      />
+                      <label class="form-check-label" for="sofAnthracite">
+                        Антрацит соф
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="darkMarble"
+                      />
+                      <label class="form-check-label" for="darkMarble">
+                        Мрамор темный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="wengeTransverse"
+                      />
+                      <label class="form-check-label" for="wengeTransverse">
+                        Венге поперечный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="ashGraphite"
+                      />
+                      <label class="form-check-label" for="ashGraphite">
+                        Ясень графит
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="quartzBlack"
+                      />
+                      <label class="form-check-label" for="quartzBlack">
+                        Кварц черный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="alberoNoche"
+                      />
+                      <label class="form-check-label" for="alberoNoche">
+                        Альберо ноче
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="wenge"
+                      />
+                      <label class="form-check-label" for="wenge">
+                        Венге
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="softGray"
+                      />
+                      <label class="form-check-label" for="softGray">
+                        Софт серый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="concreteDark"
+                      />
+                      <label class="form-check-label" for="concreteDark">
+                        Бетон темный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="antiqueSilver"
+                      />
+                      <label class="form-check-label" for="antiqueSilver">
+                        Антик серебро
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="satinBlack"
+                      />
+                      <label class="form-check-label" for="satinBlack">
+                        Сатин черный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="antiqueCopper"
+                      />
+                      <label class="form-check-label" for="antiqueCopper">
+                        Медь-антик
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="boucleDarkGrey"
+                      />
+                      <label class="form-check-label" for="boucleDarkGrey">
+                        Букле темно-серый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="boucleBlack"
+                      />
+                      <label class="form-check-label" for="boucleBlack">
+                        Букле черный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="matteShagreen"
+                      />
+                      <label class="form-check-label" for="matteShagreen">
+                        Шагрень матовая
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="silverOnBlack"
+                      />
+                      <label class="form-check-label" for="silverOnBlack">
+                        Серебро на черном
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseNine"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseNine"
+                  >
+                    Цвет внутренней панели
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingNine"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="whiteSoft"
+                      />
+                      <label class="form-check-label" for="whiteSoft">
+                        Белый софт
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="whiteMatte"
+                      />
+                      <label class="form-check-label" for="whiteMatte">
+                        Белый матовый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="concreteLight"
+                      />
+                      <label class="form-check-label" for="concreteLight">
+                        Бетон светлый
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="ashWhite"
+                      />
+                      <label class="form-check-label" for="ashWhite">
+                        Ясень белый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="quartzBlack-v"
+                      />
+                      <label class="form-check-label" for="quartzBlack-v">
+                        Кварц черный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="whiteCanvas"
+                      />
+                      <label class="form-check-label" for="whiteCanvas">
+                        Холст белый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="creamPhiladelphiaOak "
+                      />
+                      <label
+                        class="form-check-label"
+                        for="creamPhiladelphiaOak"
+                      >
+                        Дуб филадельфия крем
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="nutDark"
+                      />
+                      <label class="form-check-label" for="nutDark">
+                        Орех темный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="iceSoft"
+                      />
+                      <label class="form-check-label" for="iceSoft">
+                        Софт айс
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="loftbeigeConcrete"
+                      />
+                      <label class="form-check-label" for="loftbeigeConcrete">
+                        Бетон лофт бежевый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="horizontalOakArctic"
+                      />
+                      <label class="form-check-label" for="horizontalOakArctic">
+                        Дуб арктик горизонтальный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="pacificOakArctic"
+                      />
+                      <label class="form-check-label" for="pacificOakArctic">
+                        Дуб пацифик горизонтальный
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="bleached-DarkOak"
+                      />
+                      <label class="form-check-label" for="bleached-DarkOak">
+                        Дуб темный, дуб беленый
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="whiteNP"
+                      />
+                      <label class="form-check-label" for="whiteNP">
+                        Белый НП
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="polarOakNP"
+                      />
+                      <label class="form-check-label" for="polarOakNP">
+                        Дуб полярный НП
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="antiqueCopper-v"
+                      />
+                      <label class="form-check-label" for="antiqueCopper-v">
+                        Медь-антик
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="nutMilanese"
+                      />
+                      <label class="form-check-label" for="nutMilanese">
+                        Миланский орех
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTen"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTen"
+                  >
+                    Фурнитура
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTen"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="peep"
+                      />
+                      <label class="form-check-label" for="peep">
+                        Глазок
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="klyuchevina"
+                      />
+                      <label class="form-check-label" for="klyuchevina">
+                        Ключевина
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="liningArmor"
+                      />
+                      <label class="form-check-label" for="liningArmor">
+                        Броненакладка
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="latch"
+                      />
+                      <label class="form-check-label" for="latch">
+                        Задвижка
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="eccentric"
+                      />
+                      <label class="form-check-label" for="eccentric">
+                        Эксцентрик
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__cards">
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+            <div class="catalog__card">
+              <div class="card__content">
+                <img class="card__img" src="./img/door.png" alt="door" />
+                <img class="card__link" src="./img/link.svg" alt="">
+              </div>
+              <div class="card__desc">
+                <p class="card__title">STR MX-45</p>
+                <p>Входная дверь</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog__ask">
+        <div class="container">
+          <div class="form-text">
+            <h4 class="h4--black">У вас есть вопросы?</h4>
+            <p>Оставьте свой вопрос и мы перезвоним Вам в ближайшее время!</p>
+          </div>
+          <form class="form-tel">
+            <div class="input input-white">
+              <label for="name--ask"
+                >Введите имя <span class="red">*</span></label
+              >
+              <input
+                type="text"
+                id="name--ask"
+                name="user_name"
+                placeholder="Введите имя"
+              />
+            </div>
+            <div class="input input-white">
+              <label for="tel">Номер телефона <span class="red">*</span></label>
+              <div class="input-tel">
+                <label for="tel--ask" class="label-tel"
+                  ><img src="./img/flag.svg" alt="" />
+                  <span class="select-country">+7</span>
+                </label>
+                <input
+                  type="tel"
+                  id="tel--ask"
+                  name="user_tel"
+                  placeholder="(999) 999 99 99"
+                />
+              </div>
+            </div>
+
+            <div class="input w-100 input-white">
+              <label for="bin--ask">Введите комментарий</label>
+              <input
+                type="text"
+                id="bin--ask"
+                name="user_bin"
+                placeholder="Комментарий (не обязательно)"
+              />
+            </div>
+
+            <button class="butn butn--foot upper">Оставить заявку</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer__top container">
+        <div class="footer__left">
+          <img src="./img/logo-big.svg" alt="logo" />
+          <div class="stores stores--foot">
+            <a href="#!" class="store">
+              <img src="./img/app-foot.svg" alt="Appstore" />
+            </a>
+            <a href="#!" class="store">
+              <img src="./img/googl-foot.svg" alt="Google Play" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__center">
+          <div>
+            <h4 class="h4--black">Меню</h4>
+            <nav class="nav">
+              <ul class="nav__list--foot">
+                <li class="nav__item">
+                  <a href="#!">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">Каталог</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">Дилерам</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">Точки продаж</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h4 class="h4--black">Бренд</h4>
+            <ul class="nav__list--foot">
+              <li class="nav__item">
+                <a href="#!">MEGI DOORS</a>
+              </li>
+              <li class="nav__item">
+                <a href="#!">Ретвизан</a>
+              </li>
+              <li class="nav__item">
+                <a href="#!">STR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div>
+            <a class="tel" href="tel:+77767771111"
+              ><h3 class="grad-green">+7 (776) 777-11-11</h3></a
+            >
+            <a class="email" href="mailto:entryx.ast@gmail.com"
+              >entryx.ast@gmail.com</a
+            >
+          </div>
+          <div class="address--foot">
+            <p>Адрес:</p>
+            <a href="#!">Казахстан, г. Астана, ул. Шарбакты, 14/1</a>
+          </div>
+          <div class="icon">
+            <a href="#!" class="icon-item">
+              <img src="./img/you.svg" alt="youtube" />
+            </a>
+            <a href="#!" class="icon-item">
+              <img src="./img/telegr.svg" alt="telegram" />
+            </a>
+            <a href="#!" class="icon-item">
+              <img src="./img/inst.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright container">
+        <p>© 2023 Entrix. Все права защищены.</p>
+        <a href="#!">Политика конфиденциальности</a>
+        <a href="#!"
+          >Разработка сайта <img src="./img/ZigZag_white1 2.svg" alt="zigzag"
+        /></a>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#sort").selectmenu();
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#slider-range").slider({
+          range: true,
+          min: 10000,
+          max: 155000,
+          values: [35000, 80000],
+          slide: function (event, ui) {
+            $("#amount").val("" + ui.values[0] + " - " + ui.values[1]);
+          },
+        });
+        $("#amount").val(
+          "" +
+            $("#slider-range").slider("values", 0) +
+            " - " +
+            $("#slider-range").slider("values", 1)
+        );
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
