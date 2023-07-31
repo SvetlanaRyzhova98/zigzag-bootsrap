@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .header__contacts {

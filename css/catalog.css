@@ -81,6 +81,7 @@ button {
 }
 .filters{
 flex: 1;
+
 }
 .catalog__sorting {
   background-color: #ececec;
@@ -109,9 +110,13 @@ input[type="radio"] {
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
+  text-wrap: nowrap;
 }
 
 /* -----------------------------кастом bootstrap accordion---- */
+.accordion{
+  min-width: 300px;
+}
 .accordion-button:not(.collapsed) {
   box-shadow: none;
   border-radius: 10px;
@@ -205,6 +210,7 @@ a.ui-button:active,
 .ui-widget.ui-widget-content {
   border: none;
   border-radius: 10px;
+  background: #f8f8f8;
 }
 .ui-selectmenu-menu.ui-front.ui-selectmenu-open {
   box-shadow: 0px 4px 4px #00000040;
@@ -231,7 +237,7 @@ a.ui-button:active,
 .filter-price{
     font-family: "Cera Pro", sans-serif;
     border: none;
-
+    background: #f8f8f8;
 }
 .accordion-body--flex{
     display: flex;
