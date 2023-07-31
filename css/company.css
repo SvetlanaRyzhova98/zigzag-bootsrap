@@ -22,14 +22,74 @@
   background-clip: text;
   background-image: linear-gradient(35deg, #b5e210, #69a019);
 }
-.figcaption__company {
-  bottom: 60px;
-  right: 50px;
+
+.company__advant {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 760px;
+}
+.company__advant-card {
+  padding: 30px 40px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
 
-@media (max-width: 992px){
-  .advantages{gap: 20px;}
-  
+ .figcaption__company{
+  bottom: 60px;
+  right: 50px;
+ }
+.figcaption__company--sm {
+  bottom: 100px;
+  left: 30px;
+  right: 0;
+}
+.figcaption__company--sm p {
+  max-width: 240px;
+  color: white;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.cards-figure{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  justify-content: space-between;
+}
+.cards-figure figure:nth-child(2n) {
+  margin-top: 80px;
+}
+.cards-figure figure:nth-child(2n) .figcaption__company--sm {
+  bottom: 30px;
+}
+.card-figure  img{
+  filter: brightness(0.6);
+}
+.quality{
+flex-direction: column;
+gap: 40px;
+}
+
+@media (max-width: 1400px){
+  .cards-figure figure:nth-child(2n) {
+    margin-top: 0px;
+  }
+  .figcaption__company--sm {
+    bottom: 30px;}
+}
+@media (max-width: 1200px){
+  .cards-figure{
+    
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .advantages {
+    gap: 20px;
+  }
 }
 @media (max-width: 576px) {
   .company,
@@ -50,5 +110,23 @@
     bottom: 16px;
     right: 16px;
     max-width: 80px;
+  }
+  .cards-figure{
+    
+    grid-template-columns: 1fr;
+  }
+  .card-figure {
+    height: 300px;
+  }
+  .card-figure img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 100%;
+  }
+  .company__img{
+    object-fit: cover;
+    width: 100%;
+    height: 225px;
+    border-radius: 20px;
   }
 }
