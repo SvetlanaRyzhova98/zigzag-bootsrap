@@ -1,0 +1,58 @@
+.benefits {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.benefit {
+  padding: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 20px;
+  max-width: 415px;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  min-width: 310px;
+}
+.benefit img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 65px;
+}
+
+.benefit p {
+  font-weight: 300;
+}
+.dealers.dealers--white {
+  background: #f7f7f7;
+}
+.dealers--white .dl-container form {
+  background-color: #ffffff;
+  gap: 30px;
+}
+
+.dealers--white input,
+.dealers--white .label-tel {
+  background-color: #ececec;
+}
+.dealers--white .label-file {
+  background-color: #f6fbf2;
+}
+.dealers--white label {
+  color: black;
+}
+.dealers--white .btn-dl {
+  background-color: #181f20;
+  color: white;
+}
+.dealers--white .container-login {
+  background-color: #ffffff;
+  color: #181f20;
+}
+.dealers--white .container-login p {
+  color: #181f20;
+}
+@media (max-width: 1200px){
+    .benefits {
+        flex-wrap: wrap;
+    }
+}

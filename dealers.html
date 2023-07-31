@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entryx-Дилерам</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./img/Union.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav-wrap">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./catalog.html">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./company.html">О компании</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./dealers.html">Дилерам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Точки продаж</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="d-flex header__contacts">
+                <div class="header__contact">
+                  <a class="tel" href="tel:+77767771111">+7 (776) 777-11-11</a>
+                  <a class="email" href="mailto:entryx.ast@gmail.com"
+                    >entryx.ast@gmail.com</a
+                  >
+                </div>
+                <div class="icon icon-mobile">
+                  <a href="#!" class="icon-item">
+                    <img src="./img/you.svg" alt="youtube" />
+                  </a>
+                  <a href="#!" class="icon-item">
+                    <img src="./img/telegr.svg" alt="telegram" />
+                  </a>
+                  <a href="#!" class="icon-item">
+                    <img src="./img/inst.svg" alt="instagram" />
+                  </a>
+                </div>
+                <button class="butn butn-login">Стать дилером</button>
+                <button class="butn">Вход для дилеров</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="sect__top sect__top--catalog">
+        <div class="breadcrmb d-flex align-items-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Назад</a></li>
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Дилерам
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="sect__top__btm sect__top__btm--end">
+          <h2>Дилерам</h2>
+        </div>
+      </div>
+    </section>
+    <div class="general-container">
+      <section>
+        <div class="container">
+          <div class="d-flex gap-4 lk__box">
+            <div class="lk__container">
+              <div class="lk">
+                <h3>
+                  Зачем нужен <span class="grad-green">Личный кабинет?</span>
+                </h3>
+                <div class="lk-text">
+                  <p>
+                    Использование личного кабинета дилера помогает разгрузить
+                    менеджеров клиентов от задач по оформлению заказов, работе с
+                    рекламациями и обращениями клиентов, а также обеспечению
+                    клиентов информационными и рекламными материалами.
+                  </p>
+                  <p>
+                    Это позволяет менеджерам больше времени уделять поиску новых
+                    клиентов и повышению лояльности существующих.
+                  </p>
+                </div>
+                <a href="#!" class="lk-btn"
+                  >Узнать подробнее
+                  <img src="./img/arrrow.svg" alt="arrow" />
+                </a>
+              </div>
+              <div class="lk__img"></div>
+            </div>
+            <div class="mobile-app">
+              <h3>
+                У нас есть <span class="grad-green">мобильное приложение!</span>
+              </h3>
+              <p>Его можно скачать в Google Play или Apple Store.</p>
+              <div class="stores">
+                <a href="#!" class="store">
+                  <img src="./img/app-dark.svg" alt="Appstore" />
+                </a>
+                <a href="#!" class="store">
+                  <img src="./img/google-dark.svg" alt="Google Play" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dealers dealers--white">
+        <div class="container">
+          <div class="sect__top">
+            <div class="breadcrmb d-flex align-items-center">
+              <img src="./img/line.svg" alt="line" />
+              <p class="grad-green">Форма заявки</p>
+            </div>
+            <div class="sect__top__btm">
+              <h4 class="black h4--25">Хотите стать дилером?</h4>
+              <p class="text">
+                Оформите заявку и наши менеджеры Вам перезвонят!
+              </p>
+            </div>
+          </div>
+          <div class="dl-container">
+            <form action="">
+              <div class="inputs">
+                <div class="input">
+                  <label for="name">ФИО <span class="red">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    placeholder="Введите ФИО"
+                  />
+                </div>
+                <div class="input">
+                  <label for="bin">БИН <span class="red">*</span></label>
+                  <input
+                    type="text"
+                    id="bin"
+                    name="user_bin"
+                    placeholder="Введите БИН"
+                  />
+                </div>
+                <div class="input">
+                  <label for="tel"
+                    >Номер телефона <span class="red">*</span></label
+                  >
+                  <div class="input-tel">
+                    <label for="tel" class="label-tel"
+                      ><img src="./img/flag.svg" alt="" />
+                      <span class="select-country">+7</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="tel"
+                      name="user_tel"
+                      placeholder="(999) 999 99 99"
+                    />
+                  </div>
+                </div>
+                <div class="input">
+                  <label for="requisites">Прикрепите реквизиты</label>
+                  <label class="label-file" for="requisites"
+                    ><img src="./img/pluse.svg" alt="+"
+                  /></label>
+                  <input
+                    type="file"
+                    class="input-file"
+                    id="requisites"
+                    name="user_requisites"
+                  />
+                </div>
+                <div class="input">
+                  <label for="name-company"
+                    >Наименование компании <span class="red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="name-company"
+                    name="user_tel"
+                    placeholder="Введите наименование"
+                  />
+                </div>
+                <div class="input">
+                  <label for="certificate"
+                    >Прикрепите cправку о гос.регистрации</label
+                  >
+                  <label class="label-file" for="certificate"
+                    ><img src="./img/pluse.svg" alt="+"
+                  /></label>
+                  <input
+                    type="file"
+                    class="input-file"
+                    id="certificate"
+                    name="user_certificate"
+                  />
+                </div>
+              </div>
+              <button type="button" class="btn-dl">Оставить заявку</button>
+            </form>
+
+            <div class="container-login">
+              <h4 class="black">У вас уже есть аккаунт?</h4>
+              <button type="button" class="btn-dl">Войти</button>
+              <img src="./img/decor.svg" alt="" />
+              <p>ДОСТУП ПО ПАРОЛЮ ДЛЯ ОРГАНИЗАЦИЙ, ИП и ЮР.ЛИЦ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h4 class="h4--p40 h4--25 black">Преимущества работы с нами</h4>
+        <div class="benefits">
+          <div class="benefit">
+            <img src="./img/bulk.svg" alt="" />
+            <h4 class="black">Возможность самостоятельного заказа</h4>
+            <p>
+              Такая возможность исключает возможность ошибок при формировании
+              заказа со стороны менеджеров компании и трат на замену товаров.
+            </p>
+          </div>
+          <div class="benefit">
+            <img src="./img/bulk1.svg" alt="" />
+            <h4 class="black">Возможность избежать ошибки</h4>
+            <p>
+              Умный конфигуратор изделий позволяет избежать ошибок дилеров в
+              вариативных параметрах допустимости и совместимости опций изделий.
+            </p>
+          </div>
+          <div class="benefit">
+            <img src="./img/bulk2.svg" alt="" />
+            <h4 class="black">Удобная система просмотра товаров</h4>
+            <p>
+              В каталоге дилер может увидеть фотографию готового изделия. Это
+              позволяет розничному клиенту и повысить средний чек.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog__ask">
+        <div class="container">
+          <div class="form-text">
+            <h4 class="h4--black">У вас есть вопросы?</h4>
+            <p>Оставьте свой вопрос и мы перезвоним Вам в ближайшее время!</p>
+          </div>
+          <form class="form-tel">
+            <div class="input input-white">
+              <label for="name--ask"
+                >Введите имя <span class="red">*</span></label
+              >
+              <input
+                type="text"
+                id="name--ask"
+                name="user_name"
+                placeholder="Введите имя"
+              />
+            </div>
+            <div class="input input-white">
+              <label for="tel">Номер телефона <span class="red">*</span></label>
+              <div class="input-tel">
+                <label for="tel--ask" class="label-tel"
+                  ><img src="./img/flag.svg" alt="" />
+                  <span class="select-country">+7</span>
+                </label>
+                <input
+                  type="tel"
+                  id="tel--ask"
+                  name="user_tel"
+                  placeholder="(999) 999 99 99"
+                />
+              </div>
+            </div>
+
+            <div class="input w-100 input-white">
+              <label for="bin--ask">Введите комментарий</label>
+              <input
+                type="text"
+                id="bin--ask"
+                name="user_bin"
+                placeholder="Комментарий (не обязательно)"
+              />
+            </div>
+
+            <button class="butn butn--foot upper">Оставить заявку</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>
+        <div class="footer__top container">
+          <div class="footer__left">
+            <img src="./img/logo-big.svg" alt="logo" />
+            <div class="stores stores--foot">
+              <a href="#!" class="store">
+                <img src="./img/app-foot.svg" alt="Appstore" />
+              </a>
+              <a href="#!" class="store">
+                <img src="./img/googl-foot.svg" alt="Google Play" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__center">
+            <div>
+              <h4 class="h4--black">Меню</h4>
+              <nav class="nav">
+                <ul class="nav__list--foot">
+                  <li class="nav__item">
+                    <a href="./index.html">Главная</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./catalog.html">Каталог</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./company.html">О компании</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./dealers.html">Дилерам</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./pointssale.html">Точки продаж</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./contacts.html">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <h4 class="h4--black">Бренд</h4>
+              <ul class="nav__list--foot">
+                <li class="nav__item">
+                  <a href="#!">MEGI DOORS</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">Ретвизан</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!">STR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div>
+              <a class="tel" href="tel:+77767771111"
+                ><h3 class="grad-green">+7 (776) 777-11-11</h3></a
+              >
+              <a class="email" href="mailto:entryx.ast@gmail.com"
+                >entryx.ast@gmail.com</a
+              >
+            </div>
+            <div class="address--foot">
+              <p>Адрес:</p>
+              <a href="#!">Казахстан, г. Астана, ул. Шарбакты, 14/1</a>
+            </div>
+            <div class="icon">
+              <a href="#!" class="icon-item">
+                <img src="./img/you.svg" alt="youtube" />
+              </a>
+              <a href="#!" class="icon-item">
+                <img src="./img/telegr.svg" alt="telegram" />
+              </a>
+              <a href="#!" class="icon-item">
+                <img src="./img/inst.svg" alt="instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright container">
+          <p>© 2023 Entrix. Все права защищены.</p>
+          <a href="#!">Политика конфиденциальности</a>
+          <a href="#!"
+            >Разработка сайта <img src="./img/ZigZag_white1 2.svg" alt="zigzag"
+          /></a>
+        </div>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

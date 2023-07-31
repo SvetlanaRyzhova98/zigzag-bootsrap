@@ -20,72 +20,72 @@
   </head>
   <body>
     <header class="header container">
-      <nav class="navbar navbar-expand-lg navbar-light w-100">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./img/Union.svg" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="nav-wrap">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Главная</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Каталог</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">О компании</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Дилерам</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Точки продаж</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Контакты</a>
-                </li>
-              </ul>
-              <div class="d-flex header__contacts">
-                <div class="header__contact">
-                  <a class="tel" href="tel:+77767771111">+7 (776) 777-11-11</a>
-                  <a class="email" href="mailto:entryx.ast@gmail.com"
-                    >entryx.ast@gmail.com</a
-                  >
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./img/Union.svg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="nav-wrap">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./catalog.html">Каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./company.html">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./dealers.html">Дилерам</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pointssale.html">Точки продаж</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacts.html">Контакты</a>
+                  </li>
+                </ul>
+                <div class="d-flex header__contacts">
+                  <div class="header__contact">
+                    <a class="tel" href="tel:+77767771111">+7 (776) 777-11-11</a>
+                    <a class="email" href="mailto:entryx.ast@gmail.com"
+                      >entryx.ast@gmail.com</a
+                    >
+                  </div>
+                  <div class="icon icon-mobile">
+                    <a href="#!" class="icon-item">
+                      <img src="./img/you.svg" alt="youtube" />
+                    </a>
+                    <a href="#!" class="icon-item">
+                      <img src="./img/telegr.svg" alt="telegram" />
+                    </a>
+                    <a href="#!" class="icon-item">
+                      <img src="./img/inst.svg" alt="instagram" />
+                    </a>
+                  </div>
+                  <button class="butn butn-login">Стать дилером</button>
+                  <button class="butn">Вход для дилеров</button>
                 </div>
-                <div class="icon icon-mobile">
-                  <a href="#!" class="icon-item">
-                    <img src="./img/you.svg" alt="youtube" />
-                  </a>
-                  <a href="#!" class="icon-item">
-                    <img src="./img/telegr.svg" alt="telegram" />
-                  </a>
-                  <a href="#!" class="icon-item">
-                    <img src="./img/inst.svg" alt="instagram" />
-                  </a>
-                </div>
-                <button class="butn butn-login">Стать дилером</button>
-                <button class="butn">Вход для дилеров</button>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
     <div class="general-container">
       <section class="container">
         <div class="sect__top sect__top--catalog">
@@ -103,7 +103,7 @@
           <div class="sect__top__btm sect__top__btm--end">
             <h2>Каталог</h2>
             <div class="method">
-              <select name="sort" id="sort" >
+              <select name="sort" id="sort">
                 <option>Цена: по возрастанию</option>
                 <option>Цена: по убыванию</option>
                 <option selected="selected">Порядок: по умолчанию</option>
@@ -253,11 +253,11 @@
                 >
                   <div class="accordion-body accordion-body--flex">
                     <p>
-                      <input class="filter-price"
+                      <input
+                        class="filter-price"
                         type="text"
                         id="amount"
                         readonly
-                         
                       />
                     </p>
 
@@ -1441,7 +1441,7 @@
             </div>
           </div>
           <div class="catalog__cards">
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1451,7 +1451,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1461,7 +1461,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1471,7 +1471,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1481,7 +1481,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1491,7 +1491,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1501,7 +1501,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1511,7 +1511,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1521,7 +1521,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-            <a href="#!"  class="catalog__card">
+            <a href="#!" class="catalog__card">
               <div class="card__content">
                 <img class="card__img" src="./img/door.png" alt="door" />
                 <img class="card__link" src="./img/link.svg" alt="" />
@@ -1531,7 +1531,7 @@
                 <p>Входная дверь</p>
               </div>
             </a>
-        </div>
+          </div>
         </div>
       </section>
       <section class="catalog__ask">
@@ -1602,22 +1602,22 @@
             <nav class="nav">
               <ul class="nav__list--foot">
                 <li class="nav__item">
-                  <a href="#!">Главная</a>
+                  <a href="./index.html">Главная</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#!">Каталог</a>
+                  <a href="./catalog.html">Каталог</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#!">О компании</a>
+                  <a href="./company.html">О компании</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#!">Дилерам</a>
+                  <a href="./dealers.html">Дилерам</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#!">Точки продаж</a>
+                  <a href="./pointssale.html">Точки продаж</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#!">Контакты</a>
+                  <a href="./contacts.html">Контакты</a>
                 </li>
               </ul>
             </nav>
